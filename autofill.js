@@ -22,6 +22,7 @@ function Autocomplete(selector) {
     this.dropdown = null;
 
     this.init = function() {
+    
         this.box.addEventListener('keyup', this.boxKeyUp);
         this.dropdown = document.createElement('ul');
         this.dropdown.setAttribute('class','drop');
