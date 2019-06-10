@@ -1,0 +1,36 @@
+Arguments: 
+  /usr/local/bin/node /Users/robert_morton/.yarn/bin/yarn.js add faker.js
+
+PATH: 
+  /Users/robert_morton/.yarn/bin:/Users/robert_morton/.config/yarn/global/node_modules/.bin:/Users/robert_morton/.rbenv/shims:/Applications/Postgres.app/Contents/Versions/11/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  12.3.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/faker.js/-/faker.js-2.0.0.tgz: Request failed "404 Not Found"
+      at ResponseError.ExtendableBuiltin (/Users/robert_morton/.yarn/lib/cli.js:696:66)
+      at new ResponseError (/Users/robert_morton/.yarn/lib/cli.js:802:124)
+      at Request.<anonymous> (/Users/robert_morton/.yarn/lib/cli.js:66128:16)
+      at Request.emit (events.js:200:13)
+      at Request.module.exports.Request.onRequestResponse (/Users/robert_morton/.yarn/lib/cli.js:130418:10)
+      at ClientRequest.emit (events.js:205:15)
+      at HTTPParser.parserOnIncomingClient [as onIncoming] (_http_client.js:573:23)
+      at HTTPParser.parserOnHeadersComplete (_http_common.js:116:17)
+      at TLSSocket.socketOnData (_http_client.js:460:22)
+      at TLSSocket.emit (events.js:200:13)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
