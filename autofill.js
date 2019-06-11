@@ -1,16 +1,35 @@
 
-import faker from 'faker';
+import people from 'https://swapi.co/api/people/?page=2';
+
+
+{
+     [
+        {
+            "name": "Luke Skywalker", 
+            "name": "C-3PO", 
+            "name": "R2-D2", 
+            "name": "Darth Vader", 
+            "name": "Leia Organa", 
+            "name": "Owen Lars", 
+            "name": "Beru Whitesun lars", 
+            "name": "R5-D4",
+            "name": "Biggs Darklighter", 
+            "name": "Obi-Wan Kenobi", 
+        }
+    ]
+}
 
 var list = [ 
-    {name: 'Afghanistan', code: 'AF'}, 
-    {name: 'Åland Islands', code: 'AX'}, 
-    {name: 'Albania', code: 'AL'}, 
-    {name: 'Algeria', code: 'DZ'}, 
-    {name: 'American Samoa', code: 'AS'}, 
-    {name: 'AndorrA', code: 'AD'}, 
-    {name: 'Angola', code: 'AO'}, 
-    {name: 'Anguilla', code: 'AI'}, 
-    {name: 'Antarctica', code: 'AQ'}
+    {name: 'Luke Skywalker', code: 'Lu'}, 
+    {name: 'C-3PO', code: 'C'}, 
+    {name: 'R2-D2', code: 'R'}, 
+    {name: 'Darth Vader', code: 'Da'}, 
+    {name: 'Leia Organa', code: 'Le'}, 
+    {name: 'Owen Lars', code: 'Ow'}, 
+    {name: 'Beru Whitesun lars', code: 'Be'}, 
+    {name: 'R5-D4', code: 'AI'}, 
+    {name: 'Biggs Darklighter', code: 'Bi'},
+    {name: 'Obi-Wan Kenobi', code: 'Ob'}
 ]; 
 
 function Autocomplete(selector) {
@@ -59,22 +78,22 @@ function Autocomplete(selector) {
 }
 var ac = new Autocomplete('inputbox');
 input {
-    width: 200px;
+    width: 200 px;
 }
 
-input, .drop {
+input, _drop {
     margin: 0;
     padding: 0;
     padding: 6px;
     font-size: 16px;
-    font-family: "helvetica neue", helvetica, sans-serif;
+    font-family: 'helvetica neue', helvetica, sans-serif;
 }
 
-.drop {
+_drop {
     display: none;
     list-style-type: none;
     list-style-position: inside;
-    border-style: none groove groove groove;
+    border-style: none groove;
     border-color: silver;
     border-width:5px;
     width: 195px;
