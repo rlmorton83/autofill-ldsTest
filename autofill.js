@@ -1,7 +1,6 @@
 
 import people from 'https://swapi.co/api/people/?page=2';
 
-
 {
      [
         {
@@ -75,27 +74,4 @@ function Autocomplete(selector) {
     this.init();
 
     return this;
-}
-var ac = new Autocomplete('inputbox');
-input {
-    width: 200 px;
-}
-
-input, _drop {
-    margin: 0;
-    padding: 0;
-    padding: 6px;
-    font-size: 16px;
-    font-family: 'helvetica neue', helvetica, sans-serif;
-}
-
-_drop {
-    display: none;
-    list-style-type: none;
-    list-style-position: inside;
-    border-style: none groove;
-    border-color: silver;
-    border-width:5px;
-    width: 195px;
-    background-color: lightgray;
 }
